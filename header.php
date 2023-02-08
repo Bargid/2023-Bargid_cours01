@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <h1><?php bloginfo("Name"); ?></h1>
-        <h2><?php bloginfo("Description"); ?></h2>
-        <h3><?php bloginfo("URL"); ?></h3>
+        <h1><?php bloginfo("name"); ?></h1>
+        <h2><?php bloginfo("description"); ?></h2>
+        <h3><?php bloginfo("url"); ?></h3>
     </header>
