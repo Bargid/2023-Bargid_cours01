@@ -27,7 +27,7 @@
     function enregistrement_des_menus(){
         register_nav_menus( array(
             'Menu_entete' => 'Menu entête',
-            'Menu_footer'  => 'Menu pied de page',
+            'Menu_footer' => 'Menu pied de page',
         ) );
     }
     add_action( 'after_setup_theme', 'enregistrement_des_menus', 0 );
