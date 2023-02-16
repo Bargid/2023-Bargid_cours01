@@ -1,9 +1,10 @@
-# Exercice 01
-## Installation de Wordpress et creation de theme
+# Exercice 02
+## Améliorer la structure générale du thème
 ### Auteur : Louis Roby
 #### Objectifs
-- Installer WordPress
-- créer un thème simple
-- Créer une structure SASS
-- Créer un minimum de 10 commits
-- Déployer le site local vers un serveur distant
+- Formater en SCSS l'affichage de fichier MarkDown
+- Créer des modèles pour afficher des archives d'articles
+- Améliorer le module "front-page.php"
+- Création de Menu
+- Créer un site adaptatif en utilisant l'approche mobile-first
+- Créer un minmum de 10 commits
