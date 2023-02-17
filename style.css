@@ -399,6 +399,12 @@ html {
   box-sizing: border-box;
 }
 
+.logomenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .menu-header-container .menu {
   display: flex;
   width: 100%;
@@ -416,6 +422,18 @@ html {
 }
 .menu-header-container .menu .menu-item a {
   font-size: 20px;
+}
+
+.blocflex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.blocflex article {
+  border: 1px solid black;
+  flex: 1 0 300px;
+  margin: 10px;
+  padding: 10px;
 }
 
 h1 {
