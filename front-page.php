@@ -4,7 +4,7 @@
 
 <?php get_header(); ?>
 <main>
-    <h3>index.php</h3>
+    <code>front-page.php</code>
     <section class="blocflex">
         <?php 
         if (have_posts()) :
@@ -14,7 +14,7 @@
                 <article><h3><a href="<?php the_permalink(); ?>"><?= get_the_title(); ?></a></h3>
                     <?php // the_content();
                     // the_excerpt(); ?>
-                    <p><?php echo wp_trim_words(get_the_excerpt(), 4); ?></p>
+                    <p><?= wp_trim_words(get_the_excerpt(), 4); ?></p>
                 </article>
             <?php endwhile; ?>
         <?php endif; ?>

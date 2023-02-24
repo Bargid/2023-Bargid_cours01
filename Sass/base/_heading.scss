@@ -3,7 +3,7 @@ h1 {
 }
 
 h1 {
-    font-size: clamp(0.75rem, -0.75rem + 4.8vw, 2.75rem);
+    font-size: clamp(1rem, -0.75rem + 4.8vw, 2.75rem);
     }
     h2 {
     font-size: clamp(0.625rem, -0.3125rem + 3vw, 2.5rem);
@@ -26,23 +26,30 @@ h1 {
     }
     
     h1 {
-    font-family: Arial, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        a {
+            font-family: 'Bowlby One SC';
+            font-weight: bold;
+        }
     }
     
     h2 {
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-    font-family: "Slackey", cursive;
+    font-family: "Staatliches";
+    font-weight: bold;
     }
     
     h3,
     h4,
     h5,
     h6 {
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-family: "Staatliches";
+    font-weight: bold;
     }
     
     p {
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+    font-family: "Quicksand";
+    }
+
+    a {
+        font-family: 'Alegreya Sans SC', sans-serif;
     }
     

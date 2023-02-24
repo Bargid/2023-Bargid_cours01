@@ -3,7 +3,7 @@
 ?>
 
 <footer>
-    <h3>Pied de page</h3>
+    <h5>Tous droits réservés ©</h5>
 </footer>
 
 <?php wp_footer(); ?>

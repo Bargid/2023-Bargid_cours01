@@ -14,8 +14,9 @@
                         // the_permalink(); ?>
                         <h1><a href="<?php the_permalink(); ?>"><?= get_the_title(); ?></a></h1>
     
-                        <?= wp_trim_words(get_the_excerpt(), 4); ?>
+                        <p><?= wp_trim_words(get_the_excerpt(), 4); ?></p>
                     </article>
+                    <hr>
                <?php endwhile;
             endif; ?>
     </section>
