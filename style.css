@@ -598,7 +598,7 @@ Main h1, Main code, Main p {
 }
 @media screen and (min-width: 1000px) {
   .site {
-    grid-template-columns: 20% auto;
+    grid-template-columns: 30% auto;
     grid-template-areas: "header header" "aside main" "footer footer";
   }
 }/*# sourceMappingURL=style.css.map */
