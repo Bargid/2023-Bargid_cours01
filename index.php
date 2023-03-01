@@ -3,7 +3,7 @@
 ?>
 
 <?php get_header(); ?>
-<main>
+<main class="site__main">
     <code>index.php</code>
 <?php 
     if (have_posts()) :
