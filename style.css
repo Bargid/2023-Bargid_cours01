@@ -465,6 +465,15 @@ a {
   font-family: "Alegreya Sans SC", sans-serif;
 }
 
+.site__entete {
+  background: rgba(89, 99, 111, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  border-radius: 0;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
 .logomenu {
   display: flex;
   justify-content: space-between;
@@ -472,12 +481,6 @@ a {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-right: 20px;
-  background: rgba(89, 99, 111, 0.3);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(3.5px);
-  -webkit-backdrop-filter: blur(3.5px);
-  border-radius: 0;
-  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .menu-category-container {
@@ -569,7 +572,6 @@ Main h1, Main code, Main p {
 .site__entete {
   grid-area: header;
   padding: 1rem clamp(1rem, 3vw, 20rem);
-  background-color: antiquewhite;
 }
 
 .site__main {
@@ -579,12 +581,10 @@ Main h1, Main code, Main p {
 
 .site__footer {
   grid-area: footer;
-  background-color: antiquewhite;
 }
 
 .site__aside {
   grid-area: aside;
-  background-color: rgb(47, 148, 210);
 }
 
 /**
@@ -593,6 +593,12 @@ Main h1, Main code, Main p {
 .site {
   display: grid;
   grid-template-columns: auto;
-  grid-template-areas: "header" "main" "footer";
+  grid-template-areas: "header" "aside" "main" "footer";
   row-gap: 50px;
+}
+@media screen and (min-width: 1000px) {
+  .site {
+    grid-template-columns: 20% auto;
+    grid-template-areas: "header header" "aside main" "footer footer";
+  }
 }/*# sourceMappingURL=style.css.map */

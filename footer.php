@@ -2,7 +2,7 @@
 // Template footer.php
 ?>
 
-<footer>
+<footer class="site__footer">
     <h5>Tous droits réservés ©</h5>
 </footer>
 
