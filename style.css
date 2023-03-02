@@ -513,14 +513,21 @@ a {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.blocflex article {
+
+h1 a {
+  margin-left: 10px;
+}
+
+.blocflex__article {
   flex: 1 0 300px;
   margin: 10px;
   padding: 10px;
 }
 
-h1 a {
-  margin-left: 10px;
+.blockflex__galerie {
+  flex: 1 0 100%;
+  margin: 10px;
+  padding: 10px;
 }
 
 html {
