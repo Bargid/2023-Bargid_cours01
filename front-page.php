@@ -9,11 +9,10 @@
         <?php 
         if (have_posts()) :
             while (have_posts()) : the_post(); ?>
-                <?php if (in_category('galerie')) {
-                    get_template_part("template-parts/category", "galerie");
-                } else {
-                    get_template_part("template-parts/category", "note-wp");
-                } ?>
+                <?php 
+                $ma_categorie = "note-wp";
+                if (in_category('galerie')) {$ma_categorie = "galerie";}
+                get_template_part("template-parts/category", $ma_categorie); ?>
             <?php endwhile; ?>
         <?php endif; ?>
     </section>
