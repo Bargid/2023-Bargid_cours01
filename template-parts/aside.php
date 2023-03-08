@@ -1,13 +1,11 @@
 <aside class="site__aside">
         <h3>Menu Secondaire</h3>
-        <?php 
-            $category = get_queried_object();
-
-            if (isset($category)) {
-
-                $leMenu = $category->slug;
-            } else {
-                $leMenu = "note-wp";
+        <?php
+            $leMenu = "note-wp";
+            if (in_category('cours')) {
+                $leMenu = "cours";
+            } else if (in_category('Légumes')) {
+                $leMenu = "Légumes";
             }
 
             wp_nav_menu(array(
