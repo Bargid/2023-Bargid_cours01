@@ -1,15 +1,25 @@
-.recherche {
+.menusearch {
 
-    article {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column-reverse;
 
-        margin-top: 20px;
-        margin-bottom: 20px;
-        margin-left: 10px;
-        margin-right: 30px;
+    @media screen and (min-width: 1000px) {
 
-        padding: 15px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+    }
 
-        background-color: cornflowerblue;
-        box-shadow: 5px 10px;
+    .recherche {
+
+        display: flex;
+        flex-wrap: nowrap;
+
+        article {
+            background-color: azure;
+            margin: 10px;
+        }
     }
 }

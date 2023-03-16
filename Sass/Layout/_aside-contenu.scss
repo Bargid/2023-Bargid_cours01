@@ -25,6 +25,9 @@
 */
 
   .site {
+
+    width: 100vw;
+    overflow-x: hidden;
     display: grid;
     grid-template-columns: auto;
     grid-template-areas:
