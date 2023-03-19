@@ -1,5 +1,55 @@
 footer {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+
+    @media screen and (max-width: 400px) {
+
+        flex-direction: column;
+    }
+}
+
+footer a,
+footer .github {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 24px;
+}
+
+footer .github {
+
+    margin-left: 30px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+
+    height: 30pxpx;
+
+    border: 2px solid rgb(0, 128, 255);
+    border-radius: 10px;
+    background-color: rgba(255, 127, 80, .7);
+
+    transition: 0.3s;
+}
+
+.menu-footer {
+
+    @media screen and (max-width: 700px){
+        
+        display: none;
+    }
+}
+
+.github:hover {
+
+    background-color: rgba(255, 127, 80, 1);
+}
+
+footer a {
+
+    padding-left: 20px;
     padding-right: 20px;
 }

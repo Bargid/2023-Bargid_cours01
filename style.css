@@ -483,6 +483,22 @@ a {
   padding-right: 20px;
 }
 
+@media screen and (min-width: 1435px) {
+  .titre-mobile {
+    display: none;
+  }
+}
+
+.titre {
+  display: none;
+}
+
+@media screen and (min-width: 1435px) {
+  .titre {
+    display: flex;
+  }
+}
+
 .menusearch {
   display: flex;
   justify-content: flex-start;
@@ -526,6 +542,11 @@ a {
     transform: translatex(0);
   }
 }
+@media screen and (min-width: 400px) {
+  .menu-category-container {
+    margin-right: -40px;
+  }
+}
 .menu-category-container .menu {
   display: flex;
   flex-direction: column;
@@ -550,11 +571,20 @@ a {
   justify-content: flex-start;
   list-style: none;
   white-space: nowrap;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 2px solid rgb(0, 128, 255);
+  border-radius: 10px;
+  background-color: rgba(255, 127, 80, 0.7);
+  transition: 0.3s;
 }
 .menu-category-container .menu .menu-item a {
   font-size: 24px;
+}
+.menu-category-container .menu .menu-item:hover {
+  background-color: rgb(255, 127, 80);
 }
 
 .recherche {
@@ -607,6 +637,7 @@ html {
 .menusearch .recherche {
   display: flex;
   flex-wrap: nowrap;
+  margin-left: 40px;
 }
 .menusearch .recherche article {
   background-color: azure;
@@ -621,9 +652,56 @@ article {
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
+@media screen and (max-width: 1000px) {
+  .site__main {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
 footer {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
+  padding-right: 20px;
+}
+@media screen and (max-width: 400px) {
+  footer {
+    flex-direction: column;
+  }
+}
+
+footer a,
+footer .github {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+footer .github {
+  margin-left: 30px;
+  margin-right: 20px;
+  margin-bottom: 5px;
+  height: 30pxpx;
+  border: 2px solid rgb(0, 128, 255);
+  border-radius: 10px;
+  background-color: rgba(255, 127, 80, 0.7);
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 700px) {
+  .menu-footer {
+    display: none;
+  }
+}
+
+.github:hover {
+  background-color: rgb(255, 127, 80);
+}
+
+footer a {
+  padding-left: 20px;
   padding-right: 20px;
 }
 
@@ -633,9 +711,17 @@ footer {
     flex-direction: column;
   }
 }
-Main h1, Main code, Main p {
+Main h1, Main code {
   padding-right: 10px;
-  padding-left: 10px;
+  font-family: "Bowlby One SC";
+  color: #551a8b;
+}
+Main p {
+  font-family: "Alegreya Sans SC", sans-serif;
+}
+
+.site__aside h3 {
+  margin-left: 40px;
 }
 
 .menu-cours-container .menu {
@@ -650,17 +736,51 @@ Main h1, Main code, Main p {
 }
 .menu-cours-container .menu .menu-item {
   list-style-type: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 .menu-cours-container .menu .menu-item a .cours__sigle {
   padding-left: 4px;
   padding-right: 4px;
+  font-weight: bold;
+  color: #ff7f50;
 }
 .menu-cours-container .menu .menu-item a .cours__titre {
   display: none;
 }
 @media screen and (min-width: 1000px) {
   .menu-cours-container .menu .menu-item a .cours__titre {
-    display: block;
+    display: inline;
+  }
+}
+
+.menu-note-wp-container .menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 1000px) {
+  .menu-note-wp-container .menu {
+    flex-direction: column;
+  }
+}
+.menu-note-wp-container .menu .menu-item {
+  list-style-type: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.menu-note-wp-container .menu .menu-item a .cours__sigle {
+  padding-left: 4px;
+  padding-right: 4px;
+  font-weight: bold;
+  color: coral;
+}
+.menu-note-wp-container .menu .menu-item a .cours__titre {
+  display: none;
+}
+@media screen and (min-width: 1000px) {
+  .menu-note-wp-container .menu .menu-item a .cours__titre {
+    display: inline;
   }
 }
 
@@ -698,8 +818,8 @@ Main h1, Main code, Main p {
 }
 @media screen and (min-width: 1000px) {
   .site {
-    grid-template-columns: 30% auto;
-    grid-template-areas: "header header" "aside main" "footer footer";
+    grid-template-columns: 25% auto;
+    grid-template-areas: "header header header" "aside main main" "footer footer footer";
   }
 }
 

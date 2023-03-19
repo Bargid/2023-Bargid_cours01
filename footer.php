@@ -3,6 +3,11 @@
 ?>
 
 <footer class="site__footer">
+    <div class="menu-footer"><?php wp_nav_menu(array(
+        'menu' => 'header',
+        'container' => 'nav'
+    )); ?></div>
+    <span class="github"><a href="https://github.com/Bargid/LouisRoby_WordPress">GitHub</a></span>
     <h5>Tous droits réservés ©</h5>
 </footer>
 

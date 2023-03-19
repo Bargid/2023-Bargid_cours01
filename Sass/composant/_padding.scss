@@ -1,7 +1,14 @@
 Main {
 
-    h1, code, p {
+    h1, code {
         padding-right: 10px;
-        padding-left: 10px;
+        // padding-left: 10px;
+
+        font-family: "Bowlby One SC";
+        color: #551a8b;
+    }
+
+    p {
+        font-family: "Alegreya Sans SC", sans-serif;
     }
 }

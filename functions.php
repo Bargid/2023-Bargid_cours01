@@ -65,9 +65,16 @@ function cidweb_modifie_requete_principal( $query ) {
     // Modifier la longueur du titre en fonction de vos besoins
     $sigle = substr($title, 4, 3);
     $title = substr($title, 7);
-    $title = "<div class='cours__sigle'>" . $sigle . "</div>" .
-             "<p class='cours__titre'>" . wp_trim_words($title, 2, ' ... ') . "</p>";
+    $title = "<code class='cours__sigle'>" . $sigle . "</code><span class='cours__titre'> " . wp_trim_words($title, 2, ' ... ') . "</span>";
     }
+
+    if($args->menu == 'note-wp') {
+        // Modifier la longueur du titre en fonction de vos besoins
+        $sigle = substr($title, 0, 2);
+        $title = substr($title, 3);
+        $title = "<code class='cours__sigle'>" . $sigle . "</code><span class='cours__titre'>  " . wp_trim_words($title, 2, ' ... ') . "</span>";
+    }
+
     return $title;
 }
 add_filter('nav_menu_item_title', 'perso_menu_item_title', 10, 3);

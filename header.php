@@ -11,6 +11,7 @@
     <header class="site__entete">
         <section class="logomenu">
             <?php the_custom_logo(); ?>
+            <h1 class="titre"><a href="<?php bloginfo("url"); ?>"><?php bloginfo("name"); ?></a></h1>
             <div class="menusearch">
                 <input type="checkbox" id="chkBurger">
                 <?php wp_nav_menu(array(
@@ -21,7 +22,7 @@
             <label for="chkBurger" class="burger"><img src="https://s2.svgbox.net/hero-outline.svg?ic=menu&color=000" width="32" height="32"></label>
             </div>
         </section>
-        <h1><a href="<?php bloginfo("url"); ?>"><?php bloginfo("name"); ?></a></h1>
+        <h1 class="titre-mobile"><a href="<?php bloginfo("url"); ?>"><?php bloginfo("name"); ?></a></h1>
         <h2><?php bloginfo("description"); ?></h2>
     </header>
 

@@ -7,3 +7,13 @@ article {
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
+
+.site__main {
+        
+    @media screen and (max-width: 1000px)  {
+        
+            margin-left: 20px;
+            margin-right: 20px;
+    }
+}
+

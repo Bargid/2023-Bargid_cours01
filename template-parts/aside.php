@@ -12,4 +12,4 @@
             "menu"      => $leMenu,
             "container" => "nav"
         )); ?>
-    </aside>
+</aside>
