@@ -4,7 +4,7 @@
 
 <?php get_header(); ?>
 <main class="site__main">
-    <!-- <code>single.php</code> -->
+    <code>single.php</code>
 <?php 
     if (have_posts()) :
         while (have_posts()) : the_post();
