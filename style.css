@@ -719,6 +719,18 @@ Main h1, Main code {
 Main p {
   font-family: "Alegreya Sans SC", sans-serif;
 }
+Main .enseignant, Main .domaine {
+  font-family: "Bowlby One SC";
+}
+Main .enseignant {
+  font-size: 18px;
+  color: #551a8b;
+}
+Main .domaine {
+  margin-top: 60px;
+  font-size: 14px;
+  color: black;
+}
 
 .site__aside h3 {
   margin-left: 40px;

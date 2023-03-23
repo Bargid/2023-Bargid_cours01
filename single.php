@@ -15,5 +15,7 @@
         endwhile;
     endif;
 ?>
+<p class="domaine"><?php the_field('Domaine'); ?></p>
+<p class="enseignant"><?php the_field('Enseignant'); ?></p>
 </main>
 <?php get_footer(); ?>
