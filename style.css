@@ -465,6 +465,10 @@ a {
   font-family: "Alegreya Sans SC", sans-serif;
 }
 
+.invisible {
+  display: none;
+}
+
 .site__entete {
   background: rgba(89, 99, 111, 0.3);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -723,44 +727,57 @@ Main .enseignant, Main .domaine {
   font-family: "Bowlby One SC";
 }
 Main .enseignant {
+  margin-top: 60px;
   font-size: 18px;
   color: #551a8b;
 }
 Main .domaine {
-  margin-top: 60px;
-  font-size: 14px;
+  font-size: 16px;
   color: black;
+}
+Main .page_du_cours,
+Main .nombre_detudiants,
+Main .domaine_span,
+Main .enseignant {
+  font-size: 18px;
+  color: #551a8b;
 }
 
 .site__aside h3 {
   margin-left: 40px;
 }
 
+.menu-note-wp-container .menu,
 .menu-cours-container .menu {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 @media screen and (min-width: 1000px) {
+  .menu-note-wp-container .menu,
   .menu-cours-container .menu {
     flex-direction: column;
   }
 }
+.menu-note-wp-container .menu .menu-item,
 .menu-cours-container .menu .menu-item {
   list-style-type: none;
   margin-top: 5px;
   margin-bottom: 5px;
 }
+.menu-note-wp-container .menu .menu-item a .cours__sigle,
 .menu-cours-container .menu .menu-item a .cours__sigle {
   padding-left: 4px;
   padding-right: 4px;
   font-weight: bold;
   color: #ff7f50;
 }
+.menu-note-wp-container .menu .menu-item a .cours__titre,
 .menu-cours-container .menu .menu-item a .cours__titre {
   display: none;
 }
 @media screen and (min-width: 1000px) {
+  .menu-note-wp-container .menu .menu-item a .cours__titre,
   .menu-cours-container .menu .menu-item a .cours__titre {
     display: inline;
   }

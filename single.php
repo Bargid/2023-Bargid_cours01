@@ -15,7 +15,9 @@
         endwhile;
     endif;
 ?>
-<p class="domaine"><?php the_field('Domaine'); ?></p>
-<p class="enseignant"><?php the_field('Enseignant'); ?></p>
+<p class="domaine">Domaine : <span class="domaine_span"><?php the_field('Domaine'); ?></span></p>
+<p class="domaine">Enseignant : <span class="enseignant"><?php the_field('Enseignant'); ?></span></p>
+<p class="domaine">Nombre d'étudiants : <span class="nombre_detudiants"><?php the_field('nombre_detudiants'); ?></span></p>
+<p class="domaine">Site du cours : <a class="page_du_cours" href="https://www.cmaisonneuve.qc.ca/programme/integration-multimedia/#liste_des_cours_programme"><?php the_field('page_du_cours'); ?></a></p>
 </main>
 <?php get_footer(); ?>

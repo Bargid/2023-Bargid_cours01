@@ -22,8 +22,10 @@
             <label for="chkBurger" class="burger"><img src="https://s2.svgbox.net/hero-outline.svg?ic=menu&color=000" width="32" height="32"></label>
             </div>
         </section>
-        <h1 class="titre-mobile"><a href="<?php bloginfo("url"); ?>"><?php bloginfo("name"); ?></a></h1>
-        <h2><?php bloginfo("description"); ?></h2>
+        <?php $classe = "";
+            if (is_front_page() == false) {$classe="invisible";} ?>
+        <h1 class="titre-mobile site__titre <?=$classe?>"><a href="<?php bloginfo("url"); ?>"><?php bloginfo("name"); ?></a></h1>
+        <h2 class="site__soustitre <?=$classe?>"><?php bloginfo("description"); ?></h2>
     </header>
 
     <?php 

@@ -19,14 +19,23 @@ Main {
     }
 
     .enseignant {
+        margin-top: 60px;
         font-size: 18px;
         color: #551a8b;
     }
 
     .domaine {
-        margin-top: 60px;
-        font-size: 14px;
+        font-size: 16px;
         color: black;
+    }
+
+    .page_du_cours,
+    .nombre_detudiants,
+    .domaine_span,
+    .enseignant {
+
+        font-size: 18px;
+        color: #551a8b;
     }
     
 }

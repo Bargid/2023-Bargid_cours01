@@ -7,7 +7,10 @@
  $titre = get_the_title();
  $sigle = substr($titre, 0, 7);
  $titre_long = substr($titre, 7, -5);
- $duree = "90h";
+
+ $paren_open_pos = strpos($titre, "(");
+ $paren_close_pos = strpos($titre, ")");
+ $duree = substr($titre, $paren_open_pos + 1, $paren_close_pos - $paren_open_pos - 1);
 ?>
 
 
