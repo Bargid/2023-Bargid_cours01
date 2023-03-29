@@ -85,3 +85,17 @@ function cidweb_modifie_requete_principal( $query ) {
     return $title;
 }
 add_filter('nav_menu_item_title', 'perso_menu_item_title', 10, 3);
+
+// Enregistrer le sidebar
+function enregistrer_sidebar() {
+    register_sidebar( array(
+        'name' => __( 'Footer', "Bargid's Website"  ),
+        'id' => 'Footer',
+        'description' => __( 'Un widget area pour afficher des widgets dans le pied de page.', "Bargid's Website" ),
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>',
+    ) );
+}
+add_action( 'widgets_init', 'enregistrer_sidebar' );

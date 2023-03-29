@@ -709,6 +709,10 @@ footer a {
   padding-right: 20px;
 }
 
+.footer-video {
+  width: 500px;
+}
+
 @media screen and (max-width: 880px) {
   .menu {
     display: flex;

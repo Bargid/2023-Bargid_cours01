@@ -3,6 +3,11 @@
 ?>
 
 <footer class="site__footer">
+
+    <section class="footer-video"><?php dynamic_sidebar( 'Footer' ); ?></section>
+    <section></section>
+    <section></section>
+
     <div class="menu-footer"><?php wp_nav_menu(array(
         'menu' => 'header',
         'container' => 'nav'
