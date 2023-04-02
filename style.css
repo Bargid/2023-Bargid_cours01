@@ -817,6 +817,25 @@ Main .enseignant {
   }
 }
 
+.menu__bloc .menu {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.menu__bloc .menu .menu-item {
+  border: 2px solid black;
+  flex: 1 0 33%;
+}
+.menu__bloc .menu .menu-item a {
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.viewport {
+  min-height: 100vh;
+  padding: 0 3rem;
+}
+
 /**
 * Mise en page grid
 */

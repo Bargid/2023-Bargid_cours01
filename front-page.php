@@ -4,6 +4,18 @@
 
 <?php get_header(); ?>
 <main class="site__main">
+
+    <section class="viewport">
+        <h1>TP02</h1>
+        <h4>Auteur : Louis Roby</h4>
+        <h4>Cours: 31w - Introduction a un Gestionnaire de Contenu</h4>
+        <?php wp_nav_menu(array(
+            "menu"=>"evenement",
+            "container"=>"nav",
+            "container_class"=>"menu__bloc"
+        )); ?>
+    </section>
+
     <section class="blocflex">
         <?php 
         if (have_posts()) :
