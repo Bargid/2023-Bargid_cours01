@@ -832,14 +832,22 @@ Main .enseignant {
 .menu__bloc .menu .menu-item {
   border: 4px solid #551a8b;
   border-radius: 5px;
-  background-color: rgba(255, 127, 80, 0.7);
   flex: 0 0 33%;
   width: 100%;
   padding: 10px;
 }
+.menu__bloc .menu .menu-item .evenement__porte {
+  background-image: url("./images/Big_brain_toSCG.png");
+  background-repeat: no-repeat;
+}
 .menu__bloc .menu .menu-item a {
   font-size: 2rem;
   text-decoration: none;
+}
+
+.evenement__porte {
+  background-image: url("./images/Big_brain_toSCG.png");
+  background-repeat: no-repeat;
 }
 
 .viewport {
