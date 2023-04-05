@@ -87,6 +87,24 @@ function cidweb_modifie_requete_principal( $query ) {
 }
 add_filter('nav_menu_item_title', 'perso_menu_item_title', 10, 3);
 
+// ==================================================================
+
+function ajouter_description_class_menu( $items, $args ) {
+    // Vérifier si le menu correspondant est celui que vous souhaitez modifier
+    if ( 'evenement' === $args->menu ) {
+        foreach ( $items as $item ) {
+            // Récupérer le titre, la description et la classe personnalisée
+            $titre = $item->title;
+            $description = $item->description;
+
+            // Ajouter la description et la classe personnalisée à l'élément de menu
+            $item->title .= '<span>' . $description . '</span>';
+        }
+    }
+    return $items;
+}
+add_filter( 'wp_nav_menu_objects', 'ajouter_description_class_menu', 10, 2 );
+
 // Enregistrer le sidebar
 function enregistrer_sidebar() {
     register_sidebar( array(

@@ -55,6 +55,12 @@ footer a {
 }
 
 .footer-video {
+    display: flex;
+    width: 100%;
+}
 
-    width: 500px;
+.site__footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
