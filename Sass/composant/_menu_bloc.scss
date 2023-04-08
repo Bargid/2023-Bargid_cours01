@@ -7,18 +7,11 @@
         list-style: none;
 
         .menu-item { // li
-            border: 4px solid #551a8b;
+            border: 4px solid #541b89;
             border-radius: 5px;
-            // background-color: rgba(255, 127, 80, 0.7);
             flex: 0 0 33%;
             width: 100%;
             padding: 10px;
-
-            .evenement__porte {
-
-                background-image: url("./images/Big_brain_toSCG.png");
-                background-repeat: no-repeat;
-            }
             
             a {
                 font-size: 2rem;
@@ -31,6 +24,6 @@
 
 .evenement__porte {
 
-    background-image: url("./images/Big_brain_toSCG.png");
+    background-image: url("/wp-content/themes/Bargid-theme/images/Big_brain_toSCG.png");
     background-repeat: no-repeat;
 }

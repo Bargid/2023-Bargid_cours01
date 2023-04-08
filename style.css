@@ -836,17 +836,13 @@ Main .enseignant {
   width: 100%;
   padding: 10px;
 }
-.menu__bloc .menu .menu-item .evenement__porte {
-  background-image: url("./images/Big_brain_toSCG.png");
-  background-repeat: no-repeat;
-}
 .menu__bloc .menu .menu-item a {
   font-size: 2rem;
   text-decoration: none;
 }
 
 .evenement__porte {
-  background-image: url("./images/Big_brain_toSCG.png");
+  background-image: url("/wp-content/themes/Bargid-theme/images/Big_brain_toSCG.png");
   background-repeat: no-repeat;
 }
 
