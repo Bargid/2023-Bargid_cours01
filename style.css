@@ -849,10 +849,18 @@ Main .enseignant {
   background-image: url("/wp-content/themes/Bargid-theme/images/Big_brain_toSCG.png");
   background-repeat: no-repeat;
 }
+.evenement__porte a {
+  display: flex;
+  flex-direction: column;
+}
 
 .evenement__ferme {
   background-image: url("/wp-content/themes/Bargid-theme/images/King.png");
   background-repeat: no-repeat;
+}
+.evenement__ferme a {
+  display: flex;
+  flex-direction: column;
 }
 
 /**
