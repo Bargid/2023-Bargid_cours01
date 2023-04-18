@@ -1,5 +1,7 @@
 # Épreuve finale 31W
 
+## Auteur : Louis Roby
+
 ## L\'objectif du TP2 :
 
 - Adapter le modèle 404.php pour reproduire la maquette incluse avec le devis
