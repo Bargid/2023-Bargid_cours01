@@ -3,9 +3,9 @@
 ?>
 
 <?php get_header(); ?>
-<main class="site__main">
-    <h3>index.php</h3>
-    <code>404.php</code>
-    <h1>Erreur 404, la page n'existe pas!</h1>
+<main class="erreur404">
+    <h1>Erreur 404</h1>
+    <p>Page Introuvable, Vous pouvez tenter une recherche.</p>
+    <?= get_search_form(); ?>
 </main>
 <?php get_footer(); ?>
