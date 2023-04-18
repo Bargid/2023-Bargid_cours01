@@ -20,4 +20,18 @@
             }
         }
     }
+
+    .notes-404 {
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .menu-note-wp-container .menu {
+
+            flex-direction: row;
+            gap: 10px;
+            width: 80vw;
+        }
+    }
 }

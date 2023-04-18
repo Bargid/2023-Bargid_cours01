@@ -886,6 +886,16 @@ Main .enseignant {
   width: 100%;
   height: 100%;
 }
+.erreur404 .notes-404 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.erreur404 .notes-404 .menu-note-wp-container .menu {
+  flex-direction: row;
+  gap: 10px;
+  width: 80vw;
+}
 
 /**
 * Mise en page grid
