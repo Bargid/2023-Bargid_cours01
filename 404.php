@@ -5,7 +5,7 @@
 <?php get_header(); ?>
 <main class="erreur404">
     <h1>Erreur 404</h1>
-    <p>Page Introuvable, Vous pouvez tenter une recherche.</p>
+    <h3>Page Introuvable, Vous pouvez tenter une recherche.</h3>
     <?= get_search_form(); ?>
 
     <h3>Nos choix de cours</h3>
