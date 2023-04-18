@@ -29,7 +29,7 @@
     </header>
 
     <?php 
-    if (!is_front_page()) {
+    if (!is_front_page() && !is_404()) {
 
         get_template_part("template-parts/aside");
     } ?>
