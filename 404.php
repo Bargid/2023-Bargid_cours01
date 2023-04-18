@@ -10,7 +10,7 @@
 
     <h3>Nos choix de cours</h3>
     <div class="cours-404"><?php
-            $leMenu = "cours-wp";
+            $leMenu = "cours";
             if (in_category('cours')) {
                 $leMenu = "cours";
             }
