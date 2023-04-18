@@ -6,6 +6,10 @@
     align-items: center;
     width: 100vw;
 
+    h3{
+        margin-bottom: 10px;
+    }
+
     form {
 
         label {
@@ -30,8 +34,13 @@
         .menu-note-wp-container .menu {
 
             flex-direction: row;
-            gap: 10px;
             width: 80vw;
+            justify-content: center;
+
+            .cours__titre {
+
+                margin-right: 15px;
+            }
         }
     }
 }

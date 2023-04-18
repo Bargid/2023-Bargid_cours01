@@ -878,6 +878,9 @@ Main .enseignant {
   align-items: center;
   width: 100vw;
 }
+.erreur404 h3 {
+  margin-bottom: 10px;
+}
 .erreur404 form label {
   width: 366px;
   height: 50px;
@@ -893,8 +896,11 @@ Main .enseignant {
 }
 .erreur404 .notes-404 .menu-note-wp-container .menu {
   flex-direction: row;
-  gap: 10px;
   width: 80vw;
+  justify-content: center;
+}
+.erreur404 .notes-404 .menu-note-wp-container .menu .cours__titre {
+  margin-right: 15px;
 }
 
 /**
